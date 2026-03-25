@@ -1,0 +1,10 @@
+[project]
+name = "modelmint"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.135.1",
+    "google-adk>=1.27.2",
+]

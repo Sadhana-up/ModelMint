@@ -38,6 +38,7 @@ async def clean_csv(request: CleanCSVRequest):
     """
     Clean a CSV file by removing duplicates, handling missing values,
     and stripping whitespace. Saves the cleaned file.
+    Returns a summary of the cleaning process and the output file path.
     """
     result = clean_csv_file(request.file_path, request.output_path)
     if result.get("status") == "error":
